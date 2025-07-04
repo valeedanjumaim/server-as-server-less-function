@@ -13,7 +13,7 @@ app.get('/about', (req, res) => {
 
 app.get('/slow', async (req, res) => {
   // Simulate a slow operation taking more than 10ms
-  await new Promise(resolve => setTimeout(resolve, 2000)); // 2 second delay
+  await new Promise(resolve => setTimeout(resolve, 200000)); // 2 second delay
   res.send('This response was delayed by 2 seconds 🐌');
 })
 
