@@ -4,7 +4,7 @@ const app = express()
 const PORT = 8000
 
 app.get('/', (req, res) => {
-  res.send('Hello World')
+  res.send('Server as a serverless function')
 })
 
 app.get('/about', (req, res) => {
